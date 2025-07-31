@@ -77,5 +77,57 @@
     </div>
   </section>
 
+  <!-- Why Choose Us Section -->
+  <section class="product-section" id="why">
+    <h2>Why Choose Us</h2>
+    <ul style="max-width: 900px; margin: 0 auto; padding: 0 20px; list-style: disc;">
+      <li>Eco-friendly and safe products</li>
+      <li>Long-lasting and durable finish</li>
+      <li>Quick-drying and low-odor formulas</li>
+      <li>Wide range of colors and finishes</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="product-section" id="contact">
+    <h2>Contact Us</h2>
+    <div style="max-width: 600px; margin: auto; padding: 0 20px;">
+      <form>
+        <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin: 10px 0;">
+        <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin: 10px 0;">
+        <textarea placeholder="Your Message" rows="5" style="width: 100%; padding: 10px; margin: 10px 0;"></textarea>
+        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-header" style="text-align: center; padding: 20px; background: #f5f5f5;">
+    <p>&copy; 2025 ColorCrest Paints. All rights reserved.</p>
+  </footer>
+
+  <!-- Script: Scroll Functionality + Auto Scroll Bidirectional -->
+  <script>
+    const container = document.getElementById("productScroll");
+    let scrollDirection = 1;
+
+    function scrollLeft() {
+      container.scrollBy({ left: -container.clientWidth * 0.8, behavior: 'smooth' });
+    }
+
+    function scrollRight() {
+      container.scrollBy({ left: container.clientWidth * 0.8, behavior: 'smooth' });
+    }
+
+    setInterval(() => {
+      const maxScrollLeft = container.scrollWidth - container.clientWidth;
+      if (container.scrollLeft >= maxScrollLeft - 5) scrollDirection = -1;
+      else if (container.scrollLeft <= 5) scrollDirection = 1;
+      container.scrollBy({ left: scrollDirection * container.clientWidth * 0.8, behavior: 'smooth' });
+    }, 2000);
+  </script>
+
+  
 </body>
-  </html>
+
+</html>
