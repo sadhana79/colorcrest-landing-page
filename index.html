@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,8 +8,8 @@
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
 </head>
-<body>
 
+<body>
   <!-- Header -->
   <header class="site-header">
     <div class="container">
@@ -31,5 +32,49 @@
     </div>
   </header>
 
-</body>
-    </html>
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-text">
+      <h1>ColorCrest Paints</h1>
+      <p>Bringing Colors to Life</p>
+      <a href="#products" class="btn">Explore Colors</a>
+    </div>
+  </section>
+
+  <!-- Product Categories Section -->
+  <section class="product-section" id="products">
+    <h2>Our Product Categories</h2>
+    <div class="scroll-wrapper">
+      <button class="scroll-btn left" onclick="scrollLeft()">&#8249;</button>
+      <div class="product-scroll-container" id="productScroll">
+        <div class="product-card" id="interior">
+          <img src="images/interior.jpg" alt="Interior Paints">
+          <h3>Interior Paints</h3>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="product-card" id="exterior">
+          <img src="images/exterior.jpg" alt="Exterior Paints">
+          <h3>Exterior Paints</h3>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="product-card" id="wood">
+          <img src="images/wood.jpg" alt="Wood Coatings">
+          <h3>Wood Coatings</h3>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="product-card" id="metal">
+          <img src="images/metal.jpg" alt="Metal Paints">
+          <h3>Metal Paints</h3>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+        <div class="product-card">
+          <img src="images/metal.jpg" alt="More Paints">
+          <h3>More Paints</h3>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+      <button class="scroll-btn right" onclick="scrollRight()">&#8250;</button>
+    </div>
+  </section>
+
+ 
