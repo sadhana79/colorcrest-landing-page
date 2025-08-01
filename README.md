@@ -10,7 +10,7 @@ It showcases paint product categories, brand values, and a contact section.
 
 ##  Live Demo
 
-🔗 [Click here to view live](https://your-netlify-link.netlify.app)  
+🔗 [Click here to view live](https://colorcrest-landing-page.netlify.app) 
 _Replace with your actual deployment link from Netlify or Vercel._
 
 ---
