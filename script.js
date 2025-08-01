@@ -162,14 +162,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
 
-    if (clearButton) {
-        clearButton.addEventListener('click', function() {
-            const form = this.closest('form');
-            if (form) {
-                form.reset(); 
-            }
-        });
-    }
+
 
 }); 
 
