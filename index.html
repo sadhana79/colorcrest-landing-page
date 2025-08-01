@@ -1,133 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ColorCrest Paints</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ColorCrest Paints - Unleash Your Imagination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <div class="logo">ColorCrest</div>
-      <nav class="nav-menu">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#products">Products</a>
-            <ul class="submenu">
-              <li><a href="#interior">Interior Paints</a></li>
-              <li><a href="#exterior">Exterior Paints</a></li>
-              <li><a href="#wood">Wood Coatings</a></li>
-              <li><a href="#metal">Metal Paints</a></li>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+                <i class="fa-solid fa-paint-roller"></i>
+                <span>C</span><span>o</span><span>l</span><span>o</span><span>r</span><span>C</span><span>r</span><span>e</span><span>s</span><span>t</span><span> </span><span>P</span><span>a</span><span>i</span><span>n</span><span>t</span><span>s</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#popular-paints">Popular Paints</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#why-us">Why Choose Us</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-          </li>
-          <li><a href="#why">Why Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero-section" id="hero">
-    <div class="hero-text">
-      <h1>ColorCrest Paints</h1>
-      <p>Bringing Colors to Life</p>
-      <a href="#products" class="btn">Explore Colors</a>
-    </div>
-  </section>
-
-  <!-- Product Categories Section -->
-  <section class="product-section" id="products">
-    <h2>Our Product Categories</h2>
-    <div class="scroll-wrapper">
-      <button class="scroll-btn left" onclick="scrollLeft()">&#8249;</button>
-      <div class="product-scroll-container" id="productScroll">
-        <div class="product-card" id="interior">
-          <img src="images/interior.jpg" alt="Interior Paints">
-          <h3>Interior Paints</h3>
-          <a href="#" class="btn">Learn More</a>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="product-card" id="exterior">
-          <img src="images/exterior.jpg" alt="Exterior Paints">
-          <h3>Exterior Paints</h3>
-          <a href="#" class="btn">Learn More</a>
+    </nav>
+
+    <header id="home" class="hero-section">
+        <div class="hero-slider">
+            <div class="slide active-slide" style="background-image: url('images/banneri9.jpg');"></div>
+            <div class="slide" style="background-image: url('images/banneri4.jpg');"></div>
+            <div class="slide" style="background-image: url('images/banneri5.jpg');"></div>
+            <div class="slide" style="background-image: url('images/banneri8.jpg');"></div>
         </div>
-        <div class="product-card" id="wood">
-          <img src="images/wood.jpg" alt="Wood Coatings">
-          <h3>Wood Coatings</h3>
-          <a href="#" class="btn">Learn More</a>
+        <div class="container hero-content">
+            <h1 class="fade-in-on-scroll" style="transition-delay: 0s;">ColorCrest Paints</h1>
+            <p class="fade-in-on-scroll" style="transition-delay: 0.2s;">Unleash Your Imagination with Every Stroke.</p>
+            <a href="#products" class="btn fade-in-on-scroll" style="transition-delay: 0.4s;">Explore Colors</a>
         </div>
-        <div class="product-card" id="metal">
-          <img src="images/metal.jpg" alt="Metal Paints">
-          <h3>Metal Paints</h3>
-          <a href="#" class="btn">Learn More</a>
+    </header>
+
+    <section id="products" class="product-categories">
+        <div class="container">
+            <h2 class="fade-in-on-scroll">Our Product Categories</h2>
+            <div class="product-scroller-wrapper">
+                <button class="scroll-button scroll-left"><i class="fas fa-chevron-left"></i></button>
+                <div class="product-scroller">
+                    <div class="category-card fade-in-on-scroll" style="--delay: 0s;">
+                        <img src="images/interior.jpg" alt="Interior Paints">
+                        <div class="card-text-content">
+                            <h3>Interior Paints</h3>
+                            <p>Transform your living spaces with our premium interior colors.</p>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="category-card fade-in-on-scroll" style="--delay: 0.1s;">
+                        <img src="images/bimg5.jpg" alt="Exterior Paints">
+                        <div class="card-text-content">
+                            <h3>Exterior Paints</h3>
+                            <p>Protect and beautify your home's exterior with durable finishes.</p>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="category-card fade-in-on-scroll" style="--delay: 0.2s;">
+                        <img src="images/bimg7.jpg" alt="Wood Coatings">
+                        <div class="card-text-content">
+                            <h3>Wood Coatings</h3>
+                            <p>Enhance and preserve wooden surfaces with our specialized coatings.</p>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="category-card fade-in-on-scroll" style="--delay: 0.3s;">
+                        <img src="images/bimg6.jpg" alt="Metal Paints">
+                        <div class="card-text-content">
+                            <h3>Metal Paints</h3>
+                            <p>Provide long-lasting protection and a fresh look for metal.</p>
+                            <a href="#" class="btn btn-secondary">Learn More</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <button class="scroll-button scroll-right"><i class="fas fa-chevron-right"></i></button>
+            </div>
         </div>
-        <div class="product-card">
-          <img src="images/metal.jpg" alt="More Paints">
-          <h3>More Paints</h3>
-          <a href="#" class="btn">Learn More</a>
+    </section>
+
+    <hr>
+    <section id="popular-paints" class="popular-paints-section">
+        <div class="container">
+            <h2 class="fade-in-on-scroll">Our Popular Paints</h2>
+            <div class="popular-paints-grid">
+                <div class="paint-card fade-in-on-scroll" style="--delay: 0s;">
+                    <img src="images/populari6.jpg" alt="Classic White Interior Paint">
+                    <h3>Classic White Interior</h3>
+                </div>
+                <div class="paint-card fade-in-on-scroll" style="--delay: 0.1s;">
+                    <img src="images/populari7.jpg" alt="Modern Grey Exterior House Paint">
+                    <h3>Modern Grey Exterior</h3>
+                </div>
+                <div class="paint-card fade-in-on-scroll" style="--delay: 0.2s;">
+                    <img src="images/populari1.jpg" alt="Vibrant Kids' Room Paint">
+                    <h3>Vibrant Kids' Room</h3>
+                </div>
+                <div class="paint-card fade-in-on-scroll" style="--delay: 0.3s;">
+                    <img src="images/populari2.jpg" alt="Durable Semi-Gloss Paint">
+                    <h3>Durable Semi-Gloss</h3>
+                </div>
+                <div class="paint-card fade-in-on-scroll" style="--delay: 0.4s;">
+                    <img src="images/populari3.jpg" alt="WeatherProof Sealant Paint">
+                    <h3>WeatherProof Sealant</h3>
+                </div>
+                <div class="paint-card fade-in-on-scroll" style="--delay: 0.5s;">
+                    <img src="images/populari5.jpg" alt="Eco-Friendly Matte Paint">
+                    <h3>Eco-Friendly Matte</h3>
+                </div>
+            </div>
         </div>
-      </div>
-      <button class="scroll-btn right" onclick="scrollRight()">&#8250;</button>
-    </div>
-  </section>
+    </section>
 
-  <!-- Why Choose Us Section -->
-  <section class="product-section" id="why">
-    <h2>Why Choose Us</h2>
-    <ul style="max-width: 900px; margin: 0 auto; padding: 0 20px; list-style: disc;">
-      <li>Eco-friendly and safe products</li>
-      <li>Long-lasting and durable finish</li>
-      <li>Quick-drying and low-odor formulas</li>
-      <li>Wide range of colors and finishes</li>
-    </ul>
-  </section>
+    <hr>
+    <section id="about" class="about-us-section">
+        <div class="container">
+            <h2 class="fade-in-on-scroll">About ColorCrest Paints</h2>
+            <div class="about-us-content">
+                <div class="about-us-image-container fade-in-on-scroll" style="transition-delay: 0.1s;">
+                    <img src="images/aboutimg.jpg" alt="Paint roller applying vibrant colors to a wall">
+                </div>
+                <div class="about-us-text-container fade-in-on-scroll" style="transition-delay: 0.2s;">
+                    <p>
+                        ColorCrest Paints has been a pioneer in vibrant and durable paint solutions since 1995. Our mission is to
+                        transform spaces with high-quality, eco-friendly paints that inspire creativity and enhance everyday living.
+                        We are committed to innovation, sustainability, and exceptional customer satisfaction.
+                    </p>
+                    <p>
+                        With decades of experience, we pride ourselves on exceptional products and unparalleled customer service.
+                        Our dedicated team ensures that every can of paint meets the highest standards of quality and environmental responsibility.
+                    </p>
+                    <p>
+                        Join us in painting a brighter future, one colorful stroke at a time. Discover the difference quality and passion make!
+                    </p>
+                    <a href="#" class="btn btn-secondary">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section class="product-section" id="contact">
-    <h2>Contact Us</h2>
-    <div style="max-width: 600px; margin: auto; padding: 0 20px;">
-      <form>
-        <input type="text" placeholder="Your Name" required style="width: 100%; padding: 10px; margin: 10px 0;">
-        <input type="email" placeholder="Your Email" required style="width: 100%; padding: 10px; margin: 10px 0;">
-        <textarea placeholder="Your Message" rows="5" style="width: 100%; padding: 10px; margin: 10px 0;"></textarea>
-        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
-      </form>
-    </div>
-  </section>
+    <hr>
 
-  <!-- Footer -->
-  <footer class="site-header" style="text-align: center; padding: 20px; background: #f5f5f5;">
-    <p>&copy; 2025 ColorCrest Paints. All rights reserved.</p>
-  </footer>
+    <section id="why-us" class="why-choose-us">
+        <div class="container">
+            <h2 class="fade-in-on-scroll">Why Choose ColorCrest?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item fade-in-on-scroll" style="--delay: 0s;">
+                    <i class="fas fa-leaf"></i>
+                    <div>
+                        <h3>Eco-Friendly Formulas</h3>
+                        <p>Our paints are developed with the environment in mind, using sustainable practices.</p>
+                    </div>
+                </div>
+                <div class="benefit-item fade-in-on-scroll" style="--delay: 0.1s;">
+                    <i class="fas fa-shield-alt"></i>
+                    <div>
+                        <h3>Long-Lasting Durability</h3>
+                        <p>Enjoy vibrant colors and robust finishes that stand the test of time.</p>
+                    </div>
+                </div>
+                <div class="benefit-item fade-in-on-scroll" style="--delay: 0.2s;">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h3>Quick Drying Time</h3>
+                        <p>Minimize project time with our fast-drying paint solutions.</p>
+                    </div>
+                </div>
+                <div class="benefit-item fade-in-on-scroll" style="--delay: 0.3s;">
+                    <i class="fas fa-palette"></i>
+                    <div>
+                        <h3>Vast Color Palette</h3>
+                        <p>Explore an extensive range of shades to bring your vision to life.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Script: Scroll Functionality + Auto Scroll Bidirectional -->
-  <script>
-    const container = document.getElementById("productScroll");
-    let scrollDirection = 1;
+    <section id="contact" class="contact-inquiry">
+        <div class="container">
+            <h2 class="fade-in-on-scroll">Get in Touch</h2>
+            <p class="fade-in-on-scroll" style="transition-delay: 0.1s;">Have a question or need expert advice? We're here to help!</p>
+            <form id="contactForm" class="contact-form fade-in-on-scroll" style="transition-delay: 0.2s;">
+                <div>
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Enter name" required>
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter email" required>
+                </div>
+                <div class="form-group-full"> <label for="message">Message</label>
+                    <textarea id="message" placeholder="Tell us about your project or inquiry..." rows="6" required></textarea>
+                </div>
+                
+                <div class="form-group-full button-group">
+                    <button type="submit">Send Message</button>
+                    <button type="button" id="clearFormBtn">Clear</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
-    function scrollLeft() {
-      container.scrollBy({ left: -container.clientWidth * 0.8, behavior: 'smooth' });
-    }
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-section about">
+                <h3>ColorCrest Paints</h3>
+                <p>Unleash your imagination with every stroke. We provide premium paints for all your needs, backed by quality and eco-friendly practices.</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#popular-paints">Popular Paints</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#why-us">Why Choose Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div class="footer-section contact-info">
+                <h3>Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Paintbrush Lane, Artville, XYZ 56789</p>
+                <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                <p><i class="fas fa-envelope"></i> info@colorcrest.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ColorCrest Paints. All rights reserved.</p>
+        </div>
+    </footer>
 
-    function scrollRight() {
-      container.scrollBy({ left: container.clientWidth * 0.8, behavior: 'smooth' });
-    }
-
-    setInterval(() => {
-      const maxScrollLeft = container.scrollWidth - container.clientWidth;
-      if (container.scrollLeft >= maxScrollLeft - 5) scrollDirection = -1;
-      else if (container.scrollLeft <= 5) scrollDirection = 1;
-      container.scrollBy({ left: scrollDirection * container.clientWidth * 0.8, behavior: 'smooth' });
-    }, 2000);
-  </script>
-
-  
+    <script src="script.js"></script>
 </body>
-
 </html>
