@@ -33,6 +33,25 @@ _Replace with your actual deployment link from Netlify or Vercel._
 - Optional: JavaScript (for smooth scroll or form)
 
 ---
+##  Screenshots
+
+### 🔹 Hero Section
+![Hero Section](images/home.jpg)
+
+### 🔹 Product Categories
+![Product Categories](images/popularpaints.jpg)
+
+### 🔹 About Us Section
+![About Us](images/aboutus.jpg)
+
+### 🔹 Why Choose Us
+![Why Choose Us](images/whychoose.jpg)
+
+### 🔹 Contact Section
+![Contact Section](images/contact.jpg)
+
+### 🔹 Footer
+![Footer](images/footer.jpg)
 
 ##  How to Run Locally
 
@@ -41,6 +60,7 @@ _Replace with your actual deployment link from Netlify or Vercel._
    git clone https://github.com/your-username/colorcrest-landing-page.git
 
 # Author
-Your Name
 
-GitHub: @sadhana gonge
+**Sadhana Gonge**  
+GitHub: [@sadhanagonge](https://github.com/sadhana79)
+
