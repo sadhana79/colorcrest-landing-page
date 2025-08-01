@@ -39,7 +39,7 @@ _Replace with your actual deployment link from Netlify or Vercel._
 ![Hero Section](images/home.jpg)
 
 ### 🔹 Product Categories
-![Product Categories](images/popularpaints.jpg)
+![Product Categories](images/popularpaint.jpg)
 
 ### 🔹 About Us Section
 ![About Us](images/aboutus.jpg)
